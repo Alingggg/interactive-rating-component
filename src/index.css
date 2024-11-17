@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  @apply text-[15px];
+}
+
+body {
+  @apply bg-veryDarkBlue font-overpass;
+}
+
+@layer components {
+  .circleBackground {
+    @apply flex justify-center items-center w-[3.5rem] h-[3.5rem] rounded-full bg-lowOpacityGray;
+  }
+
+  .ratingOption {
+    @apply text-lightGray font-bold border-none;
+  }
+
+  .buttonHover {
+    @apply hover:bg-white hover:text-veryDarkBlue focus-visible:bg-white focus-visible:text-veryDarkBlue focus:outline-none cursor-pointer;
+  }
+
+  .selectedRating {
+    @apply bg-orange text-veryDarkBlue;
+  }
+}
