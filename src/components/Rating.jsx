@@ -1,3 +1,5 @@
+import starSvg from '/src/assets/icon-star.svg';
+
 export default function Rating({
   ratingValue,
   setRatingValue,
@@ -11,7 +13,7 @@ export default function Rating({
       } flex-col justify-between w-[26.2rem] h-[26.5rem] bg-darkBlue text-white p-[2rem] rounded-[1.9rem]`}
     >
       <div className="circleBackground">
-        <img src="/icon-star.svg" alt="start" />
+        <img src={starSvg} alt="star" />
       </div>
 
       <p className="text-[2rem] mt-0">How did we do?</p>

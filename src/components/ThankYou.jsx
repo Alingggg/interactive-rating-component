@@ -1,3 +1,5 @@
+import thankYouSvg from '/src/assets/illustration-thank-you.svg';
+
 export default function ThankYou({ ratingValue, isSubmitted }) {
   return (
     <div
@@ -7,7 +9,7 @@ export default function ThankYou({ ratingValue, isSubmitted }) {
     >
       <img
         className="h-[40%]"
-        src="/illustration-thank-you.svg"
+        src={thankYouSvg}
         alt="thank you"
       />
       <div className="flex items-end bg-lowOpacityGray px-[1.3rem] py-[0.2rem] rounded-[1rem] h-[2rem] mt-[2rem]">
